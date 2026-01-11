@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Name & Brand Analyzer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500;700&display=swap');
+      .font-serif {
+        font-family: 'Playfair Display', serif;
+      }
+      .font-sans {
+        font-family: 'Raleway', sans-serif;
+      }
+      /* Custom background gradients and patterns */
+      .bg-spiritual-gradient {
+        background: radial-gradient(at top left, #8B5CF6, transparent), radial-gradient(at top right, #EC4899, transparent), radial-gradient(at bottom left, #FDBA74, transparent);
+      }
+      .bg-spiritual-pattern-1 {
+        background-image: url('https://picsum.photos/seed/mandala1/1920/1080?blur=5');
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: overlay;
+        opacity: 0.1;
+      }
+      .bg-spiritual-pattern-2 {
+        background-image: url('https://picsum.photos/seed/lotus/1920/1080?blur=5');
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: overlay;
+        opacity: 0.05;
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.35.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+</head>
+<body class="bg-gray-900 text-white font-sans antialiased overflow-x-hidden min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
